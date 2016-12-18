@@ -48,31 +48,16 @@ The catalogue allows us to view how many items exist for a certain category of i
 Resulting output:
 
 >There are 6 items starting with letter a in Ammo
-There are 10 items starting with letter b in Ammo
-There are 6 items starting with letter c in Ammo
-There are 4 items starting with letter d in Ammo
-There are 0 items starting with letter e in Ammo
-There are 0 items starting with letter f in Ammo
-There are 1 items starting with letter g in Ammo
-There are 2 items starting with letter h in Ammo
-There are 5 items starting with letter i in Ammo
-There are 0 items starting with letter j in Ammo
-There are 1 items starting with letter k in Ammo
-There are 1 items starting with letter l in Ammo
-There are 10 items starting with letter m in Ammo
-There are 0 items starting with letter n in Ammo
-There are 25 items starting with letter o in Ammo
-There are 0 items starting with letter p in Ammo
-There are 0 items starting with letter q in Ammo
-There are 6 items starting with letter r in Ammo
-There are 5 items starting with letter s in Ammo
-There are 2 items starting with letter t in Ammo
-There are 0 items starting with letter u in Ammo
-There are 1 items starting with letter v in Ammo
-There are 1 items starting with letter w in Ammo
-There are 0 items starting with letter x in Ammo
-There are 0 items starting with letter y in Ammo
-There are 0 items starting with letter z in Ammo
+
+>There are 10 items starting with letter b in Ammo
+
+>There are 6 items starting with letter c in Ammo
+
+>...
+
+>There are 0 items starting with letter y in Ammo
+
+>There are 0 items starting with letter z in Ammo
 
 If we want to view all items for a certain letter and category, we can do so be reading the paragraph immediately below.
     
@@ -103,9 +88,13 @@ We can obtain daily price histories for the past 180 days (6 months) for any ite
 
 The output of the code will be:
 >6/22/2016 12:00:00 AM 21435548
+
 >6/23/2016 12:00:00 AM 21343777
+
 >...
+
 >12/17/2016 12:00:00 AM 20595343
+
 >12/18/2016 12:00:00 AM 21362684
 
 Where the value on the left is the date, and the value on the right is the value of the Drygore Longsword for that date in gp.
