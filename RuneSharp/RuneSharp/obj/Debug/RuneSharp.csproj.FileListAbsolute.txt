@@ -1,0 +1,7 @@
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\bin\Debug\RuneSharp.dll
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\bin\Debug\RuneSharp.pdb
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\bin\Debug\Newtonsoft.Json.dll
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\bin\Debug\Newtonsoft.Json.xml
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\obj\Debug\RuneSharp.csprojResolveAssemblyReference.cache
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\obj\Debug\RuneSharp.dll
+c:\Users\shan\Documents\Visual Studio 2013\Projects\RuneSharp\RuneSharp\obj\Debug\RuneSharp.pdb
