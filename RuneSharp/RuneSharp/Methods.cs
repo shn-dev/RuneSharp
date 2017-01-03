@@ -61,6 +61,20 @@ namespace RuneSharp
         }
 
         /// <summary>
+        /// Async version of getItems method.
+        /// </summary>
+        /// <param name="category">Type of item.</param>
+        /// <param name="startsWith">The first letter of the item you're searching for.</param>
+        /// <returns>An awaitable task.</returns>
+        public static async Task<Models.ItemsResponse> getItemsAsync(Models.ItemCategory category, char startsWith)
+        {
+            Func<Models.ItemsResponse>asyncFunc =
+                new Func<Models.ItemsResponse>(() => getItems(category, startsWith));
+            
+            return await Task.Run(asyncFunc);
+        }
+
+        /// <summary>
         /// Retrieves items from the RS item database that match your search.
         /// </summary>
         /// <param name="category">Type of item.</param>
@@ -83,6 +97,19 @@ namespace RuneSharp
             {
                 throw new Exception(e.Message);
             }
+        }
+        /// <summary>
+        /// Async version of overloaded getItems method.
+        /// </summary>
+        /// <param name="category">Type of item.</param>
+        /// <param name="startsWith">The first letter of the item you're searching for</param>
+        /// <param name="pageNumber">Useful for navigating queries with a large number of results.</param>
+        /// <returns>An awaitable task.</returns>
+        public static async Task<Models.ItemsResponse> getItemsAsync(Models.ItemCategory category, char startsWith, int pageNumber)
+        {
+            Func<Models.ItemsResponse> asyncFunc =
+                new Func<Models.ItemsResponse>(() => getItems(category, startsWith, pageNumber));
+            return await Task.Run(asyncFunc);
         }
 
         /// <summary>
@@ -127,6 +154,16 @@ namespace RuneSharp
             {
                 throw new Exception(e.Message);
             }
+        }
+
+        /// <summary>
+        /// Async version of getCatalogue method.
+        /// </summary>
+        /// <param name="category">The category of the item to search for</param>
+        /// <returns>An awaitable task.</returns>
+        public static async Task<Models.CatalogueResponse> getCatalogueAsync(Models.ItemCategory category)
+        {
+            return await Task.Run<Models.CatalogueResponse>(() => getCatalogue(category));
         }
 
         /// <summary>
@@ -178,6 +215,16 @@ namespace RuneSharp
             {
                 throw new Exception(e.Message);
             }
+        }
+
+        /// <summary>
+        /// Async version of getGraph method.
+        /// </summary>
+        /// <param name="itemID">The ID of the item you wish to graph.</param>
+        /// <returns>An awaitable task.</returns>
+        public static async Task<Models.GraphResponse> getGraphAsync(int itemId)
+        {
+            return await Task.Run<Models.GraphResponse>(() => getGraph(itemId));
         }
     }
 }
